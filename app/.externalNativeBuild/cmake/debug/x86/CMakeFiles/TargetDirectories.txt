@@ -1,0 +1,3 @@
+/Users/kf/Documents/workspace/android/androidDevelopmentOfArt/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/Users/kf/Documents/workspace/android/androidDevelopmentOfArt/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/Users/kf/Documents/workspace/android/androidDevelopmentOfArt/app/.externalNativeBuild/cmake/debug/x86/CMakeFiles/native-lib.dir

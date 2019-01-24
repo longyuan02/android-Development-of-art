@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.app.overseas.com.developmentart">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".SecondActivity"
+            android:configChanges="screenLayout"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="example.app.overseas.com.developmentart.SecondActivity">
+            <intent-filter>
+                <action android:name="example.app.overseas.com.developmentart.a"/>
+                <category android:name="example.app.overseas.com.developmentart.b"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThirdActivity" />
+
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="xcr" />
+                <data android:mimeType="text/*" />
+                <!--<category android:name="android.intent.category.ALTERNATIVE"/>-->
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
